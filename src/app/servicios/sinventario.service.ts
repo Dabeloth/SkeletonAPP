@@ -24,4 +24,12 @@ export class SInventarioService {
     return this.http.get<IInventarios>(`${environment.apiURL}/inventarios/?id=${id}`)
   }
 
+  actualizarInventario(inventario:any):Observable<IInventarios>{
+    return this.http.put<IInventarios>(`${environment.apiURL}/inventarios/${inventario.id}`, inventario)
+  }
+
+  eliminarInventario(inventario:any):Observable<IInventarios>{
+    return this.http.delete<IInventarios>(`${environment.apiURL}/inventarios/${inventario.id}`)
+  }
+
 }

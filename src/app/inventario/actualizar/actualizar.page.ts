@@ -17,9 +17,9 @@ export class ActualizarPage  {
 
   constructor(private inventarioServ:SInventarioService, private router:Router) { }
 
-ionViewWillEnter(){
+  ionViewWillEnter(){
   this.getInventarioByID(this.getIdFromURL())
-}
+  }
 
   getIdFromURL(){
     let url = this.router.url
@@ -41,7 +41,8 @@ ionViewWillEnter(){
   }
 
   updateInventario(){
-    console.log("Actualizar")
+    this.inventarioServ.actualizarInventario(this.inventario).subscribe()
+    this.router.navigateByUrl("/listado")
   }
 
 }

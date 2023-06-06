@@ -28,7 +28,7 @@ const routes: Routes = [
     loadChildren: () => import('./inventario/agregar/agregar.module').then( m => m.AgregarPageModule)
   },
   {
-    path: 'eliminar',
+    path: 'eliminar/:id',
     loadChildren: () => import('./inventario/eliminar/eliminar.module').then( m => m.EliminarPageModule)
   },
   {
@@ -40,7 +40,7 @@ const routes: Routes = [
     loadChildren: () => import('./inventario/listado/listado.module').then( m => m.ListadoPageModule)
   },
   {
-    path: 'actualizar',
+    path: 'actualizar/:id',
     loadChildren: () => import('./inventario/actualizar/actualizar.module').then( m => m.ActualizarPageModule)
   }
 ];
