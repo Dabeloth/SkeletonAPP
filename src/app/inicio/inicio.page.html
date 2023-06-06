@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tarea</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Agregar una Tarea</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong class="capitalize">Agregue tareas para recordar futuras anotaciones que tengas que hacer</strong>
+  </div>
+</ion-content>
+
+<ion-content>
+  <form (ngSubmit)="createTask()">
+    <ion-item>
+      <ion-label position="floating">Título de la tarea</ion-label>
+      <ion-input type="text" name="title" [(ngModel)]="task.title" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Inicio</ion-label>
+      <ion-datetime display-format="MMM DD, YYYY HH:mm" picker-format="MMM DD, YYYY HH:mm" name="startTime" [(ngModel)]="task.startTime" required></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fin</ion-label>
+      <ion-datetime display-format="MMM DD, YYYY HH:mm" picker-format="MMM DD, YYYY HH:mm" name="endTime" [(ngModel)]="task.endTime" required></ion-datetime>
+    </ion-item>
+    <ion-button expand="full" type="submit">Crear tarea</ion-button>
+  </form>
+</ion-content>

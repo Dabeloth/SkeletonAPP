@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -12,8 +12,36 @@ const routes: Routes = [
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
   {
-    path: 'access',
-    loadChildren: () => import('./access/access.module').then( m => m.AccessPageModule)
+    path: 'login',
+    loadChildren: () => import('./users/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./users/register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'agregar',
+    loadChildren: () => import('./inventario/agregar/agregar.module').then( m => m.AgregarPageModule)
+  },
+  {
+    path: 'eliminar',
+    loadChildren: () => import('./inventario/eliminar/eliminar.module').then( m => m.EliminarPageModule)
+  },
+  {
+    path: 'detalle/:id',
+    loadChildren: () => import('./inventario/detalle/detalle.module').then( m => m.DetallePageModule)
+  },
+  {
+    path: 'listado',
+    loadChildren: () => import('./inventario/listado/listado.module').then( m => m.ListadoPageModule)
+  },
+  {
+    path: 'actualizar',
+    loadChildren: () => import('./inventario/actualizar/actualizar.module').then( m => m.ActualizarPageModule)
   }
 ];
 

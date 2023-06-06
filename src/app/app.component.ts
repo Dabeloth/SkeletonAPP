@@ -6,12 +6,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inicio', url: '/folder/Inicio', icon: 'home' },
-    { title: 'Categorias', url: '/folder/Categorias', icon: 'pricetags' },
-    { title: 'Productos', url: '/folder/Productos', icon: 'basket' },
-    { title: 'Carro', url: '/folder/Carro', icon: 'cart' },
-    { title: 'Mis Datos', url: '/folder/Datos', icon: 'person' },
-    { title: 'Login', url: '/folder/Login', icon: 'log-in' },
+    { title: 'Iniciar Sesión', url: 'login', icon: 'log-in' },
+    { title: 'Crear Cuenta', url: 'register', icon: 'person-add' },
+    { title: 'Agregar', url: 'agregar', icon: 'save' },
+    { title: 'Eliminar', url: 'eliminar', icon: 'trash' },
+    { title: 'Actualizar', url: 'actualizar', icon: 'folder-open' },
+    { title: 'Detalle', url: 'detalle', icon: 'folder-open' },
+    { title: 'Listado', url: 'listado', icon: 'folder-open' },
+    { title: 'Agregar Tarea', url: 'inicio', icon: 'aperture' },
   ];
   public labels = ['Promociones', 'Descuentos', 'Descuentos-Flash'];
   constructor() {}
