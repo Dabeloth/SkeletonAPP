@@ -14,16 +14,17 @@
   <form>
     <ion-card>
       <ion-card-header>
-        <ion-card-subtitle>ID # inventario.id</ion-card-subtitle>
-        <ion-card-title>¿Realmente desea eiminar el inventario? inventario.nombre</ion-card-title>
+        <ion-card-subtitle>ID # {{ inventario.id }}</ion-card-subtitle>
+        <ion-card-title>Realmente desea eliminar a {{ inventario.nombre }}</ion-card-title>
       </ion-card-header>
+
       <ion-card-content>
         
-        <ion-button (click)="eliminarInventario" expand="block" color="danger">Eliminar</ion-button>
+        <ion-button (click)="eliminarInventario()" expand="block" color="danger">Eliminar</ion-button>
 
       </ion-card-content>
 
-
+    
 
     </ion-card>
   </form>

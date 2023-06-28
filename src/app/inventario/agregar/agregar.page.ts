@@ -12,7 +12,7 @@ export class AgregarPage implements OnInit {
 
   newInventario:IInventario = {
     nombre: "Inventario nuevo",
-    descripcion: "Descripción nueva"
+    detalle: "Descripción nueva"
   }
 
   constructor(

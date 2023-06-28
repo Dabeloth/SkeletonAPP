@@ -9,7 +9,7 @@ import { SInventarioService } from 'src/app/servicios/sinventario.service';
 })
 export class ListadoPage  {
 
-  inventarios = []
+  inventarios:any;
 
   constructor(private inventariosServ: SInventarioService, private LoadingCtrL:LoadingController) { }
 

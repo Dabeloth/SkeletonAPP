@@ -35,3 +35,29 @@
     <p><a target="_self" rel="noopener noreferrer" href="register" style="color: black">Crear Cuenta</a></p>
   </div>
 </ion-content>
+
+
+
+<ion-card>
+  <ion-card-header>
+    <ion-title>Usuario</ion-title>
+  </ion-card-header>
+  <ion-list>
+    <ion-item>
+      <ion-select placeholder="Seleccione usuario" [(ngModel)]="user">
+        <ion-select-option *ngFor="let usu of users" [value]="usu">{{usu.name}}</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Seleccione usuario" [(ngModel)]="user">
+        <ion-select-option *ngFor="let usu of users" [value]="usu">{{usu.email}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-card>  
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+{
+  "inventarios": [
+    {
+      "id": 4,
+      "nombre": "Caja 1 - Cocina",
+      "detalle": "-Utensilios -Parrilla -Horno -Microondas"
+    },
+    {
+      "nombre": "Caja 2 - Pieza Diego",
+      "detalle": "-Computador -Escritorio -Sueter",
+      "id": 5
+    },
+    {
+      "nombre": "Caja de ejemplo",
+      "detalle": "-Lapices -Tijeras -Alicate",
+      "id": 6
+    }
+  ]
+}

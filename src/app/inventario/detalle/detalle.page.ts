@@ -18,7 +18,7 @@ export class DetallePage {
   constructor(private inventarioServ:SInventarioService, private router:Router) { }
 
   ionViewWillEnter(){
-  this.getInventarioByID(this.getIdFromURL())
+    this.getInventarioByID(this.getIdFromURL())
   }
 
   getIdFromURL(){

@@ -1,4 +1,4 @@
 export interface IInventario {
     nombre: String,
-    descripcion: String   
+    detalle: String   
 }

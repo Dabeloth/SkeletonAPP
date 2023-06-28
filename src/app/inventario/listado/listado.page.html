@@ -12,8 +12,8 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let i of inventarios; let indexArray = index">
-      <ion-label> i.nombre </ion-label>
+    <ion-item *ngFor="let i of inventarios; let indexArray = index" [routerLink]="['/detalle',i.id]">
+      <ion-label> {{ i.nombre }} </ion-label>
     </ion-item>
   </ion-list> 
 </ion-content>
