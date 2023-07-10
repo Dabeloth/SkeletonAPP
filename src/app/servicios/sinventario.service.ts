@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { IInventario } from '../interfaces/iinventario';
 
+
 @Injectable({
   providedIn: 'root'
 })
