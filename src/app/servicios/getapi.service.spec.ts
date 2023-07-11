@@ -8,6 +8,7 @@ describe('GetapiService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientModule],
+      providers: [GetapiService]
     });
     service = TestBed.inject(GetapiService);
   });
