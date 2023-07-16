@@ -14,6 +14,16 @@
       "nombre": "Caja de ejemplo",
       "detalle": "-Lapices -Tijeras -Alicate",
       "id": 6
+    },
+    {
+      "nombre": "Ejemplo de presentación",
+      "detalle": "Descripción de mi aplicacion",
+      "id": 8
+    },
+    {
+      "nombre": "Inventario nuevo",
+      "detalle": "Descripción nueva",
+      "id": 9
     }
   ]
 }
